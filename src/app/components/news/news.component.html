@@ -1,0 +1,9 @@
+<p>news works!</p>
+
+<ul *ngFor="let item of product">
+  <li>
+    {{item.name}}--{{item.price}}
+    <button *ngIf="item.price > 7000" (click) = "notify.emit()">Notify me</button>
+  </li>
+
+</ul>
